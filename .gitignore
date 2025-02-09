@@ -129,6 +129,8 @@ celerybeat.pid
 
 # Environments
 .env
+.env.*
+!.env.example
 .venv
 env/
 venv/
@@ -169,3 +171,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Logs
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

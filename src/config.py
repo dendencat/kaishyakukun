@@ -8,6 +8,9 @@ class Settings(BaseSettings):
     MAX_RESULTS: int = 10
     LOG_LEVEL: str = "INFO"
     RATE_LIMIT: int = 60
+    MAX_TOKENS: int = 1000  # Default maximum tokens for ChatGPT
+    TEMPERATURE: float = 0.7
+    MODEL_NAME: str = "gpt-4o-mini"  # モデル名を最新仕様に合わせ変更
 
     class Config:
         env_file = ".env"

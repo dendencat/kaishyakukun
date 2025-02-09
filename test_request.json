@@ -1,0 +1,38 @@
+{
+    "rest_api": {
+        "single_url": {
+            "urls": ["https://example.com"]
+        }
+    },
+    "websocket": {
+        "multiple_urls": {
+            "urls": [
+                "https://example.com",
+                "https://example.org",
+                "https://example.net"
+            ]
+        },
+        "example_response": {
+            "continue": true
+        }
+    },
+    "example_responses": {
+        "success": {
+            "insights": [
+                "Key insight 1 about the webpage",
+                "Key insight 2 about the webpage",
+                "Key insight 3 about the webpage"
+            ]
+        },
+        "websocket_status": {
+            "type": "confirmation",
+            "message": "続行: '反復処理を続行しますか?'",
+            "current_status": {
+                "processed_urls": 1,
+                "remaining_urls": 2,
+                "last_processed": "https://example.com",
+                "next_url": "https://example.org"
+            }
+        }
+    }
+}
